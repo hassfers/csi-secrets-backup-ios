@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63F8090F3C19A49EC393DF46 /* Pods_KeyBackup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3F8D13E0EA3FFE25C80375 /* Pods_KeyBackup.framework */; };
+		C104962721747D09005E0D0B /* AddKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C104962621747D09005E0D0B /* AddKeyViewController.swift */; };
+		C116177F217F87A500975391 /* SelectBuddyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116177E217F87A500975391 /* SelectBuddyViewController.swift */; };
+		C1161781217FA4C000975391 /* KeyPartDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1161780217FA4C000975391 /* KeyPartDTO.swift */; };
+		C1161783217FAD8800975391 /* FileAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1161782217FAD8700975391 /* FileAction.swift */; };
+		C12163962198D0E7002C159F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12163952198D0E7002C159F /* Notification.swift */; };
+		C12163982198E1E6002C159F /* securityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12163972198E1E6002C159F /* securityFunctions.swift */; };
+		C1253A102189F78E00FB6CFD /* RecoveryKeyPartContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1253A0F2189F78E00FB6CFD /* RecoveryKeyPartContainer.swift */; };
+		C1332C6F216E47B40066C4B4 /* BuddyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1332C6E216E47B40066C4B4 /* BuddyCell.swift */; };
+		C1332C71216E54F30066C4B4 /* BuddyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1332C70216E54F30066C4B4 /* BuddyTableViewController.swift */; };
+		C1332C78216E57270066C4B4 /* BuddyOwnKeyPartContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1332C77216E57270066C4B4 /* BuddyOwnKeyPartContainer.swift */; };
+		C1332C7F216E6F010066C4B4 /* BuddyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1332C7E216E6F010066C4B4 /* BuddyDetailViewController.swift */; };
+		C1394BFE218CF0DF001388E1 /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1394BFD218CF0DF001388E1 /* StandardButton.swift */; };
+		C13DC03F218090DE002DD9EF /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DC03E218090DE002DD9EF /* RootViewController.swift */; };
+		C13DC0412180DA9E002DD9EF /* Buddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DC0402180DA9E002DD9EF /* Buddy.swift */; };
+		C1434E3D217DA86A00A5ADB4 /* KeyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1434E3C217DA86A00A5ADB4 /* KeyDetailViewController.swift */; };
+		C15AABD421860790000574E7 /* customExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15AABD321860790000574E7 /* customExtensions.swift */; };
+		C15AF620216F3B2C00124D02 /* KeyImportOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15AF61F216F3B2C00124D02 /* KeyImportOptionView.swift */; };
+		C15C2FDD216E772200523A94 /* Stephen-A.-Sonstein-advisory.png in Resources */ = {isa = PBXBuildFile; fileRef = C15C2FDC216E772200523A94 /* Stephen-A.-Sonstein-advisory.png */; };
+		C1613BEB216E3A1B001E8F01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1613BEA216E3A1B001E8F01 /* AppDelegate.swift */; };
+		C1613BF2216E3A1B001E8F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1613BF0216E3A1B001E8F01 /* Main.storyboard */; };
+		C1613BF4216E3A1C001E8F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1613BF3216E3A1C001E8F01 /* Assets.xcassets */; };
+		C1613BF7216E3A1C001E8F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1613BF5216E3A1C001E8F01 /* LaunchScreen.storyboard */; };
+		C166FEF02190E395005669F0 /* KeyOverViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C166FEEF2190E395005669F0 /* KeyOverViewTableViewController.swift */; };
+		C17A08C421D7A594002FDE9C /* iCloudSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A08C321D7A594002FDE9C /* iCloudSync.swift */; };
+		C17A201821773AF20098A500 /* MyTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A201721773AF20098A500 /* MyTextfield.swift */; };
+		C17A201A21773E270098A500 /* AlertFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A201921773E270098A500 /* AlertFunctions.swift */; };
+		C17A202221773F490098A500 /* PolyGF256.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A201E21773F480098A500 /* PolyGF256.swift */; };
+		C17A202321773F490098A500 /* ShamirSecretShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A201F21773F480098A500 /* ShamirSecretShare.swift */; };
+		C17A202421773F490098A500 /* GF256.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A202021773F480098A500 /* GF256.swift */; };
+		C17A202521773F490098A500 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A202121773F490098A500 /* Util.swift */; };
+		C17E6071218F7529007F2AD8 /* DirectCommunicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E6070218F7529007F2AD8 /* DirectCommunicationViewController.swift */; };
+		C18A0D8121879E7D00DD729D /* KeyPartSSSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18A0D8021879E7D00DD729D /* KeyPartSSSS.swift */; };
+		C19023522189B9B2002539EE /* KeyRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19023512189B9B2002539EE /* KeyRecoveryViewController.swift */; };
+		C19185F5217E56AC00379C40 /* KeyOverViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19185F4217E56AC00379C40 /* KeyOverViewTableViewCell.swift */; };
+		C19185F8217E69B400379C40 /* keyBuddyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19185F7217E69B400379C40 /* keyBuddyCollectionViewCell.swift */; };
+		C19365C721CCE7F00004A122 /* Realm+TouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19365C621CCE7F00004A122 /* Realm+TouchID.swift */; };
+		C1A69263216FB2F5002F7EC0 /* ShowOwnKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A69262216FB2F5002F7EC0 /* ShowOwnKeyViewController.swift */; };
+		C1A69265216FD36F002F7EC0 /* keychainHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A69264216FD36F002F7EC0 /* keychainHandler.swift */; };
+		C1D8FF2F218218CA00BF37B2 /* iCloudSaveDSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8FF2E218218CA00BF37B2 /* iCloudSaveDSO.swift */; };
+		C1D8FF332182198000BF37B2 /* KeyPartContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8FF322182198000BF37B2 /* KeyPartContainer.swift */; };
+		C1E49B0721CCF0530055C725 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E49B0621CCF0530055C725 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		026D05896CEF8596481E683F /* Pods-KeyBackup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyBackup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyBackup/Pods-KeyBackup.debug.xcconfig"; sourceTree = "<group>"; };
+		9D3F8D13E0EA3FFE25C80375 /* Pods_KeyBackup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyBackup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86EC9F2ABE000717503AB53 /* Pods-KeyBackup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyBackup.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyBackup/Pods-KeyBackup.release.xcconfig"; sourceTree = "<group>"; };
+		C104962621747D09005E0D0B /* AddKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKeyViewController.swift; sourceTree = "<group>"; };
+		C116177E217F87A500975391 /* SelectBuddyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBuddyViewController.swift; sourceTree = "<group>"; };
+		C1161780217FA4C000975391 /* KeyPartDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPartDTO.swift; sourceTree = "<group>"; };
+		C1161782217FAD8700975391 /* FileAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileAction.swift; sourceTree = "<group>"; };
+		C12163952198D0E7002C159F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		C12163972198E1E6002C159F /* securityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = securityFunctions.swift; sourceTree = "<group>"; };
+		C1253A0F2189F78E00FB6CFD /* RecoveryKeyPartContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryKeyPartContainer.swift; sourceTree = "<group>"; };
+		C1332C6E216E47B40066C4B4 /* BuddyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyCell.swift; sourceTree = "<group>"; };
+		C1332C70216E54F30066C4B4 /* BuddyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyTableViewController.swift; sourceTree = "<group>"; };
+		C1332C77216E57270066C4B4 /* BuddyOwnKeyPartContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddyOwnKeyPartContainer.swift; sourceTree = "<group>"; };
+		C1332C7E216E6F010066C4B4 /* BuddyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyDetailViewController.swift; sourceTree = "<group>"; };
+		C1394BFD218CF0DF001388E1 /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
+		C13DC03E218090DE002DD9EF /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C13DC0402180DA9E002DD9EF /* Buddy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buddy.swift; sourceTree = "<group>"; };
+		C1434E3C217DA86A00A5ADB4 /* KeyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDetailViewController.swift; sourceTree = "<group>"; };
+		C15AABD321860790000574E7 /* customExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customExtensions.swift; sourceTree = "<group>"; };
+		C15AF61F216F3B2C00124D02 /* KeyImportOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyImportOptionView.swift; sourceTree = "<group>"; };
+		C15C2FDC216E772200523A94 /* Stephen-A.-Sonstein-advisory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stephen-A.-Sonstein-advisory.png"; sourceTree = "<group>"; };
+		C1613BE7216E3A1B001E8F01 /* KeyBackup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyBackup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1613BEA216E3A1B001E8F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1613BF1216E3A1B001E8F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1613BF3216E3A1C001E8F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1613BF6216E3A1C001E8F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1613BF8216E3A1C001E8F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C166FEEF2190E395005669F0 /* KeyOverViewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyOverViewTableViewController.swift; sourceTree = "<group>"; };
+		C179CEE521CC01ED00DF460D /* KeyBackup-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyBackup-Bridging-Header.h"; sourceTree = "<group>"; };
+		C17A08C321D7A594002FDE9C /* iCloudSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudSync.swift; sourceTree = "<group>"; };
+		C17A201721773AF20098A500 /* MyTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTextfield.swift; path = KeyBackup/MyTextfield.swift; sourceTree = SOURCE_ROOT; };
+		C17A201921773E270098A500 /* AlertFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFunctions.swift; sourceTree = "<group>"; };
+		C17A201E21773F480098A500 /* PolyGF256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyGF256.swift; sourceTree = "<group>"; };
+		C17A201F21773F480098A500 /* ShamirSecretShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShamirSecretShare.swift; sourceTree = "<group>"; };
+		C17A202021773F480098A500 /* GF256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GF256.swift; sourceTree = "<group>"; };
+		C17A202121773F490098A500 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		C17E6070218F7529007F2AD8 /* DirectCommunicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectCommunicationViewController.swift; sourceTree = "<group>"; };
+		C18A0D8021879E7D00DD729D /* KeyPartSSSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPartSSSS.swift; sourceTree = "<group>"; };
+		C19023512189B9B2002539EE /* KeyRecoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyRecoveryViewController.swift; sourceTree = "<group>"; };
+		C19185F4217E56AC00379C40 /* KeyOverViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyOverViewTableViewCell.swift; sourceTree = "<group>"; };
+		C19185F7217E69B400379C40 /* keyBuddyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyBuddyCollectionViewCell.swift; sourceTree = "<group>"; };
+		C19365C621CCE7F00004A122 /* Realm+TouchID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+TouchID.swift"; sourceTree = "<group>"; };
+		C1A69262216FB2F5002F7EC0 /* ShowOwnKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOwnKeyViewController.swift; sourceTree = "<group>"; };
+		C1A69264216FD36F002F7EC0 /* keychainHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = keychainHandler.swift; path = KeyBackup/keychainHandler.swift; sourceTree = SOURCE_ROOT; };
+		C1D8FF2E218218CA00BF37B2 /* iCloudSaveDSO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iCloudSaveDSO.swift; sourceTree = "<group>"; };
+		C1D8FF322182198000BF37B2 /* KeyPartContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPartContainer.swift; sourceTree = "<group>"; };
+		C1D8FF3421821A3200BF37B2 /* KeyBackup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyBackup.entitlements; sourceTree = "<group>"; };
+		C1E49B0621CCF0530055C725 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1613BE4216E3A1B001E8F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F8090F3C19A49EC393DF46 /* Pods_KeyBackup.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F747906ACCD5A5631E3053A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D3F8D13E0EA3FFE25C80375 /* Pods_KeyBackup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAF6C8309B65B8D8A1BB3DE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				026D05896CEF8596481E683F /* Pods-KeyBackup.debug.xcconfig */,
+				B86EC9F2ABE000717503AB53 /* Pods-KeyBackup.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1253A0E2189F71E00FB6CFD /* RealmDataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				C13DC0402180DA9E002DD9EF /* Buddy.swift */,
+				C1D8FF322182198000BF37B2 /* KeyPartContainer.swift */,
+				C18A0D8021879E7D00DD729D /* KeyPartSSSS.swift */,
+				C1253A0F2189F78E00FB6CFD /* RecoveryKeyPartContainer.swift */,
+				C1332C77216E57270066C4B4 /* BuddyOwnKeyPartContainer.swift */,
+			);
+			path = RealmDataTypes;
+			sourceTree = "<group>";
+		};
+		C1332C72216E556E0066C4B4 /* Buddy */ = {
+			isa = PBXGroup;
+			children = (
+				C116177E217F87A500975391 /* SelectBuddyViewController.swift */,
+				C1332C70216E54F30066C4B4 /* BuddyTableViewController.swift */,
+				C1332C7E216E6F010066C4B4 /* BuddyDetailViewController.swift */,
+			);
+			path = Buddy;
+			sourceTree = "<group>";
+		};
+		C1613BDE216E3A1B001E8F01 = {
+			isa = PBXGroup;
+			children = (
+				C1613BE9216E3A1B001E8F01 /* KeyBackup */,
+				C1613BE8216E3A1B001E8F01 /* Products */,
+				BAF6C8309B65B8D8A1BB3DE4 /* Pods */,
+				7F747906ACCD5A5631E3053A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1613BE8216E3A1B001E8F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1613BE7216E3A1B001E8F01 /* KeyBackup.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1613BE9216E3A1B001E8F01 /* KeyBackup */ = {
+			isa = PBXGroup;
+			children = (
+				C1613BF0216E3A1B001E8F01 /* Main.storyboard */,
+				C1D8FF3421821A3200BF37B2 /* KeyBackup.entitlements */,
+				C1613BEA216E3A1B001E8F01 /* AppDelegate.swift */,
+				C1394BFD218CF0DF001388E1 /* StandardButton.swift */,
+				C17E6070218F7529007F2AD8 /* DirectCommunicationViewController.swift */,
+				C13DC03E218090DE002DD9EF /* RootViewController.swift */,
+				C1E49B0621CCF0530055C725 /* LoginViewController.swift */,
+				C17E6072218F886A007F2AD8 /* Cells */,
+				C19185F6217E687C00379C40 /* Key */,
+				C17A202621773F5D0098A500 /* SSSS */,
+				C1253A0E2189F71E00FB6CFD /* RealmDataTypes */,
+				C1332C72216E556E0066C4B4 /* Buddy */,
+				C17A201921773E270098A500 /* AlertFunctions.swift */,
+				C1613BF3216E3A1C001E8F01 /* Assets.xcassets */,
+				C1D8FF2E218218CA00BF37B2 /* iCloudSaveDSO.swift */,
+				C1161782217FAD8700975391 /* FileAction.swift */,
+				C17A08C321D7A594002FDE9C /* iCloudSync.swift */,
+				C15AABD321860790000574E7 /* customExtensions.swift */,
+				C12163952198D0E7002C159F /* Notification.swift */,
+				C12163972198E1E6002C159F /* securityFunctions.swift */,
+				C15C2FDC216E772200523A94 /* Stephen-A.-Sonstein-advisory.png */,
+				C15AF61F216F3B2C00124D02 /* KeyImportOptionView.swift */,
+				C1A69262216FB2F5002F7EC0 /* ShowOwnKeyViewController.swift */,
+				C1613BF5216E3A1C001E8F01 /* LaunchScreen.storyboard */,
+				C17A201721773AF20098A500 /* MyTextfield.swift */,
+				C1A69264216FD36F002F7EC0 /* keychainHandler.swift */,
+				C19365C621CCE7F00004A122 /* Realm+TouchID.swift */,
+				C1613BF8216E3A1C001E8F01 /* Info.plist */,
+				C179CEE521CC01ED00DF460D /* KeyBackup-Bridging-Header.h */,
+			);
+			path = KeyBackup;
+			sourceTree = "<group>";
+		};
+		C17A202621773F5D0098A500 /* SSSS */ = {
+			isa = PBXGroup;
+			children = (
+				C17A202021773F480098A500 /* GF256.swift */,
+				C17A201E21773F480098A500 /* PolyGF256.swift */,
+				C17A201F21773F480098A500 /* ShamirSecretShare.swift */,
+				C17A202121773F490098A500 /* Util.swift */,
+			);
+			path = SSSS;
+			sourceTree = "<group>";
+		};
+		C17E6072218F886A007F2AD8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C1332C6E216E47B40066C4B4 /* BuddyCell.swift */,
+				C19185F4217E56AC00379C40 /* KeyOverViewTableViewCell.swift */,
+				C19185F7217E69B400379C40 /* keyBuddyCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C19185F6217E687C00379C40 /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				C166FEEF2190E395005669F0 /* KeyOverViewTableViewController.swift */,
+				C104962621747D09005E0D0B /* AddKeyViewController.swift */,
+				C1434E3C217DA86A00A5ADB4 /* KeyDetailViewController.swift */,
+				C19023512189B9B2002539EE /* KeyRecoveryViewController.swift */,
+				C1161780217FA4C000975391 /* KeyPartDTO.swift */,
+			);
+			path = Key;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1613BE6216E3A1B001E8F01 /* KeyBackup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1613BFB216E3A1C001E8F01 /* Build configuration list for PBXNativeTarget "KeyBackup" */;
+			buildPhases = (
+				0407686F2DCF22C7DA4A2A61 /* [CP] Check Pods Manifest.lock */,
+				C1613BE3216E3A1B001E8F01 /* Sources */,
+				C1613BE4216E3A1B001E8F01 /* Frameworks */,
+				C1613BE5216E3A1B001E8F01 /* Resources */,
+				CC18BBEF5F786560F0B7F981 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyBackup;
+			productName = KeyBackup;
+			productReference = C1613BE7216E3A1B001E8F01 /* KeyBackup.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1613BDF216E3A1B001E8F01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Stefan Haßferter";
+				TargetAttributes = {
+					C1613BE6216E3A1B001E8F01 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C1613BE2216E3A1B001E8F01 /* Build configuration list for PBXProject "KeyBackup" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1613BDE216E3A1B001E8F01;
+			productRefGroup = C1613BE8216E3A1B001E8F01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1613BE6216E3A1B001E8F01 /* KeyBackup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1613BE5216E3A1B001E8F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15C2FDD216E772200523A94 /* Stephen-A.-Sonstein-advisory.png in Resources */,
+				C1613BF7216E3A1C001E8F01 /* LaunchScreen.storyboard in Resources */,
+				C1613BF4216E3A1C001E8F01 /* Assets.xcassets in Resources */,
+				C1613BF2216E3A1B001E8F01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0407686F2DCF22C7DA4A2A61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeyBackup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC18BBEF5F786560F0B7F981 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KeyBackup/Pods-KeyBackup-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyBackup/Pods-KeyBackup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1613BE3216E3A1B001E8F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E49B0721CCF0530055C725 /* LoginViewController.swift in Sources */,
+				C1D8FF332182198000BF37B2 /* KeyPartContainer.swift in Sources */,
+				C19023522189B9B2002539EE /* KeyRecoveryViewController.swift in Sources */,
+				C17A202421773F490098A500 /* GF256.swift in Sources */,
+				C15AF620216F3B2C00124D02 /* KeyImportOptionView.swift in Sources */,
+				C1161781217FA4C000975391 /* KeyPartDTO.swift in Sources */,
+				C15AABD421860790000574E7 /* customExtensions.swift in Sources */,
+				C1332C78216E57270066C4B4 /* BuddyOwnKeyPartContainer.swift in Sources */,
+				C1161783217FAD8800975391 /* FileAction.swift in Sources */,
+				C12163962198D0E7002C159F /* Notification.swift in Sources */,
+				C17A201821773AF20098A500 /* MyTextfield.swift in Sources */,
+				C1613BEB216E3A1B001E8F01 /* AppDelegate.swift in Sources */,
+				C17A202521773F490098A500 /* Util.swift in Sources */,
+				C1332C71216E54F30066C4B4 /* BuddyTableViewController.swift in Sources */,
+				C12163982198E1E6002C159F /* securityFunctions.swift in Sources */,
+				C116177F217F87A500975391 /* SelectBuddyViewController.swift in Sources */,
+				C166FEF02190E395005669F0 /* KeyOverViewTableViewController.swift in Sources */,
+				C17A201A21773E270098A500 /* AlertFunctions.swift in Sources */,
+				C17A202321773F490098A500 /* ShamirSecretShare.swift in Sources */,
+				C17E6071218F7529007F2AD8 /* DirectCommunicationViewController.swift in Sources */,
+				C13DC03F218090DE002DD9EF /* RootViewController.swift in Sources */,
+				C1434E3D217DA86A00A5ADB4 /* KeyDetailViewController.swift in Sources */,
+				C1332C7F216E6F010066C4B4 /* BuddyDetailViewController.swift in Sources */,
+				C19365C721CCE7F00004A122 /* Realm+TouchID.swift in Sources */,
+				C1A69263216FB2F5002F7EC0 /* ShowOwnKeyViewController.swift in Sources */,
+				C1332C6F216E47B40066C4B4 /* BuddyCell.swift in Sources */,
+				C17A08C421D7A594002FDE9C /* iCloudSync.swift in Sources */,
+				C1A69265216FD36F002F7EC0 /* keychainHandler.swift in Sources */,
+				C18A0D8121879E7D00DD729D /* KeyPartSSSS.swift in Sources */,
+				C19185F5217E56AC00379C40 /* KeyOverViewTableViewCell.swift in Sources */,
+				C17A202221773F490098A500 /* PolyGF256.swift in Sources */,
+				C13DC0412180DA9E002DD9EF /* Buddy.swift in Sources */,
+				C19185F8217E69B400379C40 /* keyBuddyCollectionViewCell.swift in Sources */,
+				C1394BFE218CF0DF001388E1 /* StandardButton.swift in Sources */,
+				C104962721747D09005E0D0B /* AddKeyViewController.swift in Sources */,
+				C1D8FF2F218218CA00BF37B2 /* iCloudSaveDSO.swift in Sources */,
+				C1253A102189F78E00FB6CFD /* RecoveryKeyPartContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C1613BF0216E3A1B001E8F01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1613BF1216E3A1B001E8F01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1613BF5216E3A1C001E8F01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1613BF6216E3A1C001E8F01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1613BF9216E3A1C001E8F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1613BFA216E3A1C001E8F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1613BFC216E3A1C001E8F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026D05896CEF8596481E683F /* Pods-KeyBackup.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KeyBackup/KeyBackup.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FCNMCC2Y82;
+				INFOPLIST_FILE = KeyBackup/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = adorsys.KeyBackup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyBackup/KeyBackup-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1613BFD216E3A1C001E8F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B86EC9F2ABE000717503AB53 /* Pods-KeyBackup.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KeyBackup/KeyBackup.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FCNMCC2Y82;
+				INFOPLIST_FILE = KeyBackup/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = adorsys.KeyBackup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyBackup/KeyBackup-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1613BE2216E3A1B001E8F01 /* Build configuration list for PBXProject "KeyBackup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1613BF9216E3A1C001E8F01 /* Debug */,
+				C1613BFA216E3A1C001E8F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1613BFB216E3A1C001E8F01 /* Build configuration list for PBXNativeTarget "KeyBackup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1613BFC216E3A1C001E8F01 /* Debug */,
+				C1613BFD216E3A1C001E8F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1613BDF216E3A1B001E8F01 /* Project object */;
+}

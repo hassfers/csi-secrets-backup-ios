@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/stefanhassferter/develop/Masterarbeit/KeyBackup/KeyBackup/BuddyViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "self:KeyBackup.xcodeproj">
+   </FileRef>
+</Workspace>
